@@ -4,13 +4,15 @@ import Jonas from '../assets/Jonas.jpeg'
 import logo from "../assets/logo.svg"
 import skimmersLogo from '../assets/Skimmers_Type_Logo_2.png'
 import wizmatikLogo from '../assets/wizmatik_logo.jpg'
-import pleLogo from '../assets/PLELogo-removebg-preview.png'
+import pleLogo from '../assets/plt-logo.png'
 
 export default function Home() {
   return (
     <div className="min-w-full h-auto">
       <nav className="fixed w-full left-0 top-0 bg-[#1f4c35ee] px-4 py-3 flex items-center justify-between z-50">
-        <Image src={logo} width={25} height={25} alt="Jonas Guzman portfolio" />
+        <Link href='/'>
+          <Image src={logo} width={25} height={25} alt="Jonas Guzman portfolio" />
+        </Link>
         <a
           href="mailto:jonas12596@gmail.com"
           className="uppercase text-[#f9f7eb] text-sm sm:text-base"
@@ -102,7 +104,7 @@ export default function Home() {
                     graffiti culture and street art history with modern digital media to drive
                     engagement and cultural relevance.
                   </p>
-                  <Link href='/' className="text-[#1f4c35] font-semibold underline">Read More</Link>
+                  <Link href='/projects/wizmatik' className="text-[#1f4c35] font-semibold underline">Read More</Link>
                 </div>
               </div>
 
@@ -120,7 +122,7 @@ export default function Home() {
                     POS systems. Led UX/UI design and full-stack development, while also
                     creating branded visuals and community-driven safety content.
                   </p>
-                  <Link href='/' className="text-[#1f4c35] font-semibold underline">Read More</Link>
+                  <Link href='/projects/skimmers' className="text-[#1f4c35] font-semibold underline">Read More</Link>
                 </div>
               </div>
 
@@ -138,7 +140,7 @@ export default function Home() {
                     Designed in the spirit of publications like The New York Times and The Atlantic,
                     the site blends opinion, analysis, and narrative journalism.
                   </p>
-                  <Link href='/' className="text-[#1f4c35] font-semibold underline">Read More</Link>
+                  <Link href='https://www.postlabortimes.com' className="text-[#1f4c35] font-semibold underline">Live Website</Link>
                 </div>
               </div>
 
@@ -177,7 +179,7 @@ export default function Home() {
               <div className="mt-4 flex items-start justify-center flex-col gap-2">
                 <p className="text-base sm:text-lg font-semibold text-[#1f4c35]">Content Development & Editing:</p>
                 <p className="text-[#1f4c35] text-sm sm:text-base">
-                  Web copywriting, editorial calendars, SEO optimization, fact-checking, and tone/voice consistency.
+                  Web copywriting, SEO optimization, fact-checking, and tone/voice consistency.
                 </p>
               </div>
 
