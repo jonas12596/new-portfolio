@@ -9,19 +9,20 @@ import pleLogo from '../assets/plt-logo.png'
 export default function Home() {
   return (
     <div className="min-w-full h-auto">
-      <nav className="fixed w-full left-0 top-0 bg-[#1f4c35ee] px-4 py-3 flex items-center justify-between z-50">
+      <nav className="fixed w-full left-0 top-0 bg-[#1f4c35f2] px-4 py-3 flex items-center justify-between z-50">
         <Link href='/'>
           <Image src={logo} width={25} height={25} alt="Jonas Guzman portfolio" />
         </Link>
         <a
-          href="mailto:jonas12596@gmail.com"
+          href="/Jonas_Guzman_Resume.pdf"
           className="uppercase text-[#f9f7eb] text-sm sm:text-base"
+          download
         >
           PDF Resume
         </a>
       </nav>
       <main className="w-full">
-        <section className="fixed inset-0 w-full h-screen bg-gradient-to-br from-[#1f4c35] via-[#276b4a] to-[#3a8c6e] flex items-center justify-center text-center flex-col gap-4 sm:gap-6 z-10 px-4">
+        <section className="fixed inset-0 w-full h-screen bg-[#1f4c35] flex items-center justify-center text-center flex-col gap-4 sm:gap-6 z-10 px-4">
           <h1 className="font-medium text-2xl sm:text-4xl text-[#f9f7eb]">Jonas Guzman</h1>
           <div className="flex justify-center items-center">
             <Image
@@ -45,7 +46,7 @@ export default function Home() {
               <div className="w-full h-[1px] bg-[#1f4c35] my-3 sm:my-4 rounded-full"></div>
               <div className="flex items-center justify-center flex-col gap-3 sm:gap-4">
                 <p className="text-[#1f4c35] text-sm sm:text-base">
-                  Jonas is a content creator and digital storyteller with experience producing social media campaigns, independent blogs, and multimedia projects that make complex topics engaging and accessible. His work includes documenting NYC graffiti culture, developing civic-focused app content, and publishing research-driven articles on social and economic trends.
+                  Jonas is a Dominican-American 🇺🇸🇩🇴 content creator and digital storyteller with experience producing social media campaigns, independent blogs, and multimedia projects that make complex topics engaging and accessible. His work includes documenting NYC graffiti culture, developing civic-focused app content, and publishing research-driven articles on social and economic trends.
                 </p>
                 <p className="text-[#1f4c35] text-sm sm:text-base">
                   He thrives at the intersection of research, writing, and web publishing, creating content that informs, engages, and resonates with audiences. Jonas is drawn to projects that allow him to help organizations communicate clearly and tell stories that matter to their communities.
@@ -140,7 +141,7 @@ export default function Home() {
                     Designed in the spirit of publications like The New York Times and The Atlantic,
                     the site blends opinion, analysis, and narrative journalism.
                   </p>
-                  <Link href='https://www.postlabortimes.com' className="text-[#1f4c35] font-semibold underline">Live Website</Link>
+                  <Link href='https://www.postlabortimes.com' target="_blank" className="text-[#1f4c35] font-semibold underline">Live Website</Link>
                 </div>
               </div>
 
@@ -210,7 +211,7 @@ export default function Home() {
                 <a href="tel:6462001168" className="text-base font-light text-[#f9f7eb] hover:underline transition">646-200-1168</a>
               </div>
             </div>
-            <small className="text-xs tracking-wide font-light opacity-80 text-[#f9f7eb]">© 2025 studio kismo</small>
+            <small className="text-xs tracking-wide font-light opacity-60 text-[#f9f7eb]">© 2025 studio kismo</small>
           </footer>
         </section>
       </main>

@@ -1,6 +1,9 @@
 import Image from "next/image";
 import logo from "../../../assets/logo.svg";
-import skimmersLogo from "../../../assets/Skimmers_Type_Logo_2.png"; // <-- Add your Skimmers logo here
+import skimmerBg from '../../../assets/skimmer-bg.jpg'
+import skimmerReport from '../../../assets/skimmers-report.png'
+import skimmerMap from '../../../assets/skimmers-map.png'
+import skimmersType from '../../../assets/Skimmers-Type.png'
 import Link from "next/link";
 
 export default function Skimmers() {
@@ -19,73 +22,76 @@ export default function Skimmers() {
                 </a>
             </nav>
             <main className="w-full">
-                <section className="relative mt-4 w-full min-h-screen flex flex-col items-center justify-start px-4 py-12 sm:p-12">
-                    <div className="w-full max-w-3xl flex flex-col items-center gap-6">
-                        {/* Skimmers Logo */}
-                        <figure className="flex items-center justify-center">
-                            <Image
-                                src={skimmersLogo}
-                                alt="Skimmers Logo"
-                                width={180}
-                                height={180}
-                                className="rounded-full"
-                                priority
-                            />
-                        </figure>
-                        <h1 className="text-2xl sm:text-4xl font-semibold text-[#1f4c35] uppercase text-center">
-                            Skimmers
-                        </h1>
-                        <div className="w-full h-[1px] bg-[#1f4c35] my-3 rounded-full"></div>
-                        <div className="flex flex-col gap-4 text-[#1f4c35] text-base sm:text-lg">
-                            <p>
-                                <span className="font-semibold">Skimmers</span> is an NYC-based app concept designed to 
-                                protect consumers from hidden fees and deceptive charges. The platform empowers 
-                                users by scanning receipts and transactions, flagging unnecessary fees, and 
-                                building a shared database of “skimming” practices. 
-                            </p>
-                            <p>
-                                I contributed to the early-stage branding, content strategy, and web presence. 
-                                My role included designing simple landing pages, writing copy that communicates 
-                                the mission clearly, and shaping how the app is positioned as both practical 
-                                and socially impactful.
-                            </p>
-                            <p>
-                                <span className="font-semibold">Role:</span> Independent Creator — Branding, Content Strategy, Web Design
-                            </p>
-                            <p>
-                                <span className="font-semibold">Year:</span> 2025 (In Progress)
-                            </p>
+                {/* Hero Section with background image */}
+                <section
+                    className="min-w-full h-screen relative bg-cover bg-center"
+                    style={{
+                        backgroundImage: `url(${skimmerBg.src})`,
+                    }}
+                >
+                    <div className="absolute inset-0 bg-black/50"></div>
+                    <h1 className="text-4xl text-[#f9f7eb] absolute left-0 bottom-0 p-8 uppercase font-semibold">Skimmers</h1>
+                </section>
+                {/* Main Content */}
+                <section className="w-full bg-[#f9f7eb] pt-12 px-8 flex justify-center">
+                    <div className="w-full max-w-5xl flex flex-col items-center gap-8">
+                        <div className="w-full flex flex-col lg:flex-row items-center justify-center gap-8">
+                            <div className="w-full lg:w-1/2 flex flex-col items-center">
+                                <figure className="rounded-2xl overflow-hidden shadow-lg w-full max-w-[400px]">
+                                    <Image
+                                        src={skimmerMap}
+                                        alt="Skimmers App Detection Map"
+                                        width={600}
+                                        height={600}
+                                        className="object-cover w-full h-auto"
+                                    />
+                                </figure>
+                                <figcaption className="mt-3 text-center text-[#1f4c35] text-base font-medium">
+                                    Skimmers App Detection Map
+                                </figcaption>
+                            </div>
+                            <div className="w-full lg:w-1/2 flex flex-col items-center">
+                                <figure className="rounded-2xl overflow-hidden shadow-lg w-full max-w-[400px]">
+                                    <Image
+                                        src={skimmerReport}
+                                        alt="Skimmers App Report Tab"
+                                        width={600}
+                                        height={600}
+                                        className="object-cover w-full h-auto"
+                                    />
+                                </figure>
+                                <figcaption className="mt-3 text-center text-[#1f4c35] text-base font-medium">
+                                    Skimmers App Report Tab
+                                </figcaption>
+                            </div>
                         </div>
-
-                        {/* Image gallery */}
-                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
-                            <div className="rounded-2xl overflow-hidden shadow-md">
-                                <Image 
-                                    src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg"
-                                    alt="App concept placeholder"
-                                    width={400}
-                                    height={250}
-                                    className="object-cover w-full h-full"
-                                />
+                        <div className="w-full flex items-start flex-col">
+                            <div className="w-full flex items-start flex-col">
+                                <h1 className="uppercase text-left font-semibold text-xl text-[#1f4c35]">About Project</h1>
+                                <p className="mt-4 text-[#1f4c35] leading-relaxed text-base">
+                                    I was contracted to handle the early frontend build for <strong>Skimmers</strong>, a mobile app created to
+                                    protect people from card skimmer fraud at gas pumps, ATMs, and other everyday payment spots.
+                                    My focus was on building out the UI with Expo and React Native, making sure the app had a clean,
+                                    fast, and user-friendly experience right from the start. While the project has bigger goals around
+                                    AI detection and data reporting, my role was to lock in the foundation — taking the concept from an
+                                    idea to something people could actually see and use. This was about more than just screens and buttons;
+                                    I helped give the app its first real identity, setting it up to grow and scale with New Yorkers in mind.
+                                </p>
                             </div>
-                            <div className="rounded-2xl overflow-hidden shadow-md">
-                                <Image 
-                                    src="https://images.pexels.com/photos/3184451/pexels-photo-3184451.jpeg"
-                                    alt="User experience brainstorming"
-                                    width={400}
-                                    height={250}
-                                    className="object-cover w-full h-full"
-                                />
-                            </div>
-                            <div className="rounded-2xl overflow-hidden shadow-md">
-                                <Image 
-                                    src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg"
-                                    alt="Collaboration and design process"
-                                    width={400}
-                                    height={250}
-                                    className="object-cover w-full h-full"
-                                />
-                            </div>
+                        </div>
+                    </div>
+                </section>
+                {/* Gallery Section */}
+                <section>
+                    <div className="w-full flex flex-col p-8 items-center justify-center">
+                        <div className="overflow-hidden">
+                            <Image
+                                src={skimmersType}
+                                alt="App concept placeholder"
+                                width={400}
+                                height={250}
+                                className="object-cover w-full h-full"
+                            />
                         </div>
                     </div>
                 </section>
@@ -102,7 +108,7 @@ export default function Skimmers() {
                             <a href="tel:6462001168" className="text-base font-light text-[#f9f7eb] hover:underline transition">646-200-1168</a>
                         </div>
                     </div>
-                    <small className="text-xs tracking-wide font-light opacity-80 text-[#f9f7eb]">© 2025 studio kismo</small>
+                    <small className="text-xs tracking-wide font-light opacity-60 text-[#f9f7eb]">© 2025 studio kismo</small>
                 </footer>
             </main>
         </div>

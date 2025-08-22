@@ -70,7 +70,7 @@ export default function Wizmatik() {
                                 I shot and directed a mini doc on Bronx graffiti legend <strong>BAN2</strong>, capturing the story with a real NYC feel.
                                 I also produced and edited short-form videos that blew up on social media — getting reposted by New Yorkers all over and
                                 even catching attention from big pages like <strong>@newyorkers (1M+ followers)</strong>. One clip even had
-                                <strong> Fat Joe</strong> drop a comment, which gave Wizmatik instant credibility. My work helped shape Wizmatik’s
+                                <strong> Fat Joe</strong> drop a comment, which gave Wizmatik crazy credibility. My work has helped shape Wizmatik’s
                                 visual identity, tying it back to hip-hop and graffiti culture while pushing the brand deeper into the NYC creative scene.
                             </p>
                         </div>
@@ -104,7 +104,7 @@ export default function Wizmatik() {
                             <a href="tel:6462001168" className="text-base font-light text-[#f9f7eb] hover:underline transition">646-200-1168</a>
                         </div>
                     </div>
-                    <small className="text-xs tracking-wide font-light opacity-80 text-[#f9f7eb]">© 2025 studio kismo</small>
+                    <small className="text-xs tracking-wide font-light opacity-60 text-[#f9f7eb]">© 2025 studio kismo</small>
                 </footer>
             </main>
         </div>
