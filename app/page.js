@@ -14,7 +14,7 @@ export default function Home() {
           <Image src={logo} width={25} height={25} alt="Jonas Guzman portfolio" />
         </Link>
         <a
-          href="/Jonas_Guzman_Resume.pdf"
+          href="/JonasGuzmanResume.pdf"
           className="uppercase text-[#f9f7eb] text-sm sm:text-base"
           download
         >
@@ -141,7 +141,14 @@ export default function Home() {
                     Designed in the spirit of publications like The New York Times and The Atlantic,
                     the site blends opinion, analysis, and narrative journalism.
                   </p>
-                  <Link href='https://www.postlabortimes.com' target="_blank" className="text-[#1f4c35] font-semibold underline">Live Website</Link>
+                  <a
+                    href="https://jonas12596-kjiyn.wordpress.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#1f4c35] font-semibold underline"
+                  >
+                    Live Website
+                  </a>
                 </div>
               </div>
 
