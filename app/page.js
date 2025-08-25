@@ -14,7 +14,7 @@ export default function Home() {
           <Image src={logo} width={25} height={25} alt="Jonas Guzman portfolio" />
         </Link>
         <a
-          href="/JonasGuzmanResume.pdf"
+          href="/JonasGuzman-Resume.pdf"
           className="uppercase text-[#f9f7eb] text-sm sm:text-base"
           download
         >
